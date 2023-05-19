@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador by Jimbo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="cajaLogo">
+            <img src="imagenes/VectorLogo.png" class="imagenLogo">
+        </div>
+        <div class="cajaIngresarTexto">
+            <textarea cols="40" rows="20" id="texto" class="ingreseTexto" required
+                placeholder="Ingrese el text aqui"></textarea>
+            <div class="advertencia">
+                <img for="soloMinusculas" src="imagenes/VectorAdmiracion.png" alt="signo de admiración">
+                <label id="soloMinusculas">Solo letras minúsculas y sin acentos</label>
+            </div>
+            <button class="encriptar" type="button" value="Encriptar" onclick="encriptar()">Encriptar</button>
+            <button class="desencriptar" type="button" value="Desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+        <div class="cajaResultado">
+            <img id="imagen" src="imagenes/Muñeco.png" alt="muñeco de no hay texto">
+            <h2 id= "mensaje" class="txtNoEncontrado">Ningún mensaje fue encontrado</h2>
+            <h3 id= "txtRecomendacion" class="txtRecomendacion">Ingresa el texto que desees encriptar o desencriptar.</h3>
+            <h3 id="mensajeAnterior" class="mensajeAnterior">Texto encriptado:</h3>
+            <textarea cols="30" rows="5" id="textoResultado" class="textoResultado"
+            placeholder="...esperando resultado."></textarea>
+            <button class="botonCopiar" type="button" value="copiar" onclick="copiar()">Copiar</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <h2>Realizado por Jimbo</h2>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="main.js"></script>
