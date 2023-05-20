@@ -20,7 +20,7 @@ function encriptar() {
 
     }
     if (texto.length != 0) {
-        document.getElementById("imagen").src = "./imagenes/VectorAdmiracion.png"
+        document.getElementById("imagen").src = "./imagenes/encontrado.jpg"
         document.getElementById("mensaje").textContent = "Mensaje encriptado"
         document.getElementById("textoResultado").value = textoCifrado;
         document.getElementById("texto").value = ""
@@ -54,7 +54,7 @@ function desencriptar() {
 
     }
     if (texto.length != 0) {
-        document.getElementById("imagen").src = "./imagenes/VectorAdmiracion.png"
+        document.getElementById("imagen").src = "./imagenes/encontrado.jpg"
         document.getElementById("mensaje").textContent = "Mensaje encriptado"
         document.getElementById("textoResultado").value = textoDecifrado;
         document.getElementById("texto").value = ""
